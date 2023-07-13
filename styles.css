@@ -39,10 +39,15 @@ header {
   transform: translateY(-100%); /* Move the menu off-screen initially */
 }
 
-.link-box:hover .dropdown-menu {
-  display: block;
-  top: 100%; /* New position at the bottom of the link box when hovered */
-  transform: translateY(0%); /* Move the menu into view */
+.link-box .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #262323;
+  padding: 10px;
+  transition: top 1s ease;
+  transform: translateY(-100%);
 }
 
 /* Styles for the links inside dropdown menus */
@@ -51,11 +56,6 @@ header {
   color: #fff;
   text-decoration: none;
   padding: 5px;
-}
-
-.dropdown-menu a:hover {
-  background-color: #fff;
-  color: #262323;
 }
 
 /* Styles for the link boxes when hovered */

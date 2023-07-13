@@ -1,0 +1,121 @@
+/* Styles for the header */
+header {
+  background-color: #1b1919;
+  padding: 5px;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 10px; /* Add border radius to create rounded edges */
+}
+.header-text {
+  font-size: 24px;
+  margin-right: 975px; /* Pushes the text to the left */
+}
+
+/* Styles for the link boxes */
+.link-box {
+  background-color: #1b1919;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border: 2px solid transparent;
+  margin-right: 30px;
+  transition: border-color 0.3s, opacity 0.3s;
+  position: relative;
+}
+
+/* Styles for the dropdown menus */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 0; /* Initial position at the top of the link box */
+  left: 0;
+  background-color: #262323;
+  padding: 10px;
+  transition: top 1s ease; /* Transition with a 0.5s duration */
+  transform: translateY(-100%); /* Move the menu off-screen initially */
+}
+
+.link-box:hover .dropdown-menu {
+  display: block;
+  top: 100%; /* New position at the bottom of the link box when hovered */
+  transform: translateY(0%); /* Move the menu into view */
+}
+
+/* Styles for the links inside dropdown menus */
+.dropdown-menu a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #fff;
+  color: #262323;
+}
+
+/* Styles for the link boxes when hovered */
+.link-box:hover {
+  border-color: #fff; /* Set border color to white when hovered */
+  opacity: 1; /* Reduce opacity when hovered */
+}
+
+/* Additional styles for link text */
+.link-box a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Styles for the content section */
+.content {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 20px; /* Adjust the padding value as desired */
+}
+
+.image-container {
+  margin-right: 30px; /* Add margin on the right side for spacing */
+  margin-left: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: 400px; /* Adjust the height as desired */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.grey-rectangle {
+  width: 1000px;
+  height: 600px;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.text-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.text-container h2 {
+  text-decoration: underline;
+}
+
+/* Additional styles for navigation, main content, and footer */
+/* Reset body margin, padding, and background color */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  background-color: #333; /* Set the background color to a darker grey */
+}
+
+

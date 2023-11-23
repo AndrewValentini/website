@@ -1,55 +1,101 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Website</title>
   <link rel="stylesheet" href="styles2.css">
   <style>
     body {
-      text-align: center; /* Center align the content within the body */
-      font-family: Arial, sans-serif; /* Choose a suitable font */
-      color: #301934	; 
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: #301934;
     }
 
     header {
-      margin-top: 25px; /* Adjust the top margin as needed */
+      margin-top: 25px;
     }
 
     h1 {
-      font-size: 24px; /* Adjust the font size as needed */
+      font-size: 24px;
     }
 
     .box-container {
       display: flex;
-      justify-content: center; /* Center the boxes horizontally */
-      margin-top: 20px; /* Adjust the top margin as needed */
+      justify-content: center;
+      margin-top: 20px;
     }
 
     .box {
-      background-color: #E5E4E2; /* Set the background color to light grey */
+      background-color: #E5E4E2;
       box-sizing: border-box;
-      border-radius: 10px; /* Adjust the border-radius for rounded corners */
-      margin: 0 10px; /* Adjust the margin to bring the boxes closer together */
+      border-radius: 10px;
+      margin: 0 10px;
       display: flex;
-      align-items: center; /* Center the text vertically within the box */
-      height: 30px; /* Adjust the height to make the boxes shorter */
+      align-items: center;
+      height: 30px;
     }
 
     .box a {
-      text-decoration: none; /* Remove underlining */
-      color: #301934; /* Set the font color to black */
-      padding: 10px; /* Adjust the padding for spacing around the text */
-    }
-    .body-text {
-      margin-top: 30px;
-      /* Adjust the top margin as needed */
-      max-width: 800px; /* Set the maximum width for the container */
-      margin-left: 50px; /* Increase the left margin to move the text to the left */
-      margin-right: auto; /* Center the container by pushing it to the left */
-      text-align: center; /* Align the text to the left within the container */
+      text-decoration: none;
+      color: #301934;
+      padding: 10px;
     }
 
+    .body-container {
+      display: flex;
+      max-width: 1000px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .text-and-image-container {
+      flex: 1;
+    }
+
+    .title-text {
+      font-weight: bold;
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    .body-text {
+      font-size: 18px;
+      margin-right: 20px;
+      line-height: 2; /* Double line spacing */
+    }
+
+    .images-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .additional-image {
+      margin-top: 10px;
+      max-width: 250px;
+      height: auto;
+    }
+
+    .image-caption {
+      text-align: center;
+      margin-top: 10px;
+      font-style: italic;
+      color: #555;
+      max-width: 250px; /* Add max-width to limit the width of the caption */
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .link {
+      color: #0066cc; /* Change link color as needed */
+      text-decoration: none;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -67,32 +113,56 @@
       <p><a href="projects_home.html">Projects</a></p>
     </div>
     <div class="box">
-      <p><a href="curriculm_vitae_home.html">Curriculum Vitae</a></p>
+      <p><a href="curriculum_vitae_home.html">Curriculum Vitae</a></p>
     </div>
   </div>
   <hr> 
   <!-- Your other content goes here -->
-  <div class="body-text">
-    <p class="body-text">The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.
-
-      We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.--That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, --That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness. Prudence, indeed, will dictate that Governments long established should not be changed for light and transient causes; and accordingly all experience hath shewn, that mankind are more disposed to suffer, while evils are sufferable, than to right themselves by abolishing the forms to which they are accustomed. But when a long train of abuses and usurpations, pursuing invariably the same Object evinces a design to reduce them under absolute Despotism, it is their right, it is their duty, to throw off such Government, and to provide new Guards for their future security.--Such has been the patient sufferance of these Colonies; and such is now the necessity which constrains them to alter their former Systems of Government. The history of the present King of Great Britain is a history of repeated injuries and usurpations, all having in direct object the establishment of an absolute Tyranny over these States. To prove this, let Facts be submitted to a candid world.
-      
-      He has refused his Assent to Laws, the most wholesome and necessary for the public good.
-      
-      He has forbidden his Governors to pass Laws of immediate and pressing importance, unless suspended in their operation till his Assent should be obtained; and when so suspended, he has utterly neglected to attend to them.
-      
-      He has refused to pass other Laws for the accommodation of large districts of people, unless those people would relinquish the right of Representation in the Legislature, a right inestimable to them and formidable to tyrants only.
-      
-      He has called together legislative bodies at places unusual, uncomfortable, and distant from the depository of their public Records, for the sole purpose of fatiguing them into compliance with his measures.
-      
-      He has dissolved Representative Houses repeatedly, for opposing with manly firmness his invasions on the rights of the people.
-      
-      He has refused for a long time, after such dissolutions, to cause others to be elected; whereby the Legislative powers, incapable of Annihilation, have returned to the People at large for their exercise; the State remaining in the mean time exposed to all the dangers of invasion from without, and convulsions within.
-      
-      He has endeavoured to prevent the population of thes</p>
-
-    <!-- Add more content as needed -->
+  <div class="body-container">
+    <div class="text-and-image-container">
+      <div class="title-text">
+        <p>Faculty-Directed Research in Gravitational Waves</p>
+      </div>
+      <div class="body-text">
+        <p>test</p>
+       
+      </div>
     </div>
-  
+    <div class="images-container">
+      <figure>
+        <img class="additional-image" src="LLO.jpg">
+        <figcaption class="image-caption">On top of one of LIGO Livingston's interferometer arms</figcaption>
+      </figure>
+      <figure>
+        <img class="additional-image" src="lsu_poster.jpg">
+        <figcaption class="image-caption">Presenting my summer work at LSU's Summer Undergraduate Research Forum </figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="body-container">
+    <div class="text-and-image-container">
+      <div class="title-text">
+        <p>2023 REU at LSU</p>
+      </div>
+      <div class="body-text">
+        <p>During the summer of 2023, I was selected to participate in Louisiana State University's Research Experience for Undergraduates (REU) program. I was mentored by Dr. Gabriela González on a project related to glitch prevention (FIX THIS). The Laser Interferometer Gravitational-Wave Observatory (LIGO) uses search pipelines to detect gravitational waves from the inspiral of compact objects. These pipelines are designed to alert scientists when a gravitational wave event passes through the instrument. They are often tricked by sources of noise, however, meaning that the pipelines often mistake noise for a real gravitational wave event. I developed models that identify shared properties of these noise-caused alerts with the goal of providing a battery of tests that could be used to determine how likely a given alert was to be caused by sources of noise.</p>
+        <!-- Add more content as needed -->
+        <div class="body-text">A folder containing a project report and a copy of the poster can be found at this <a class="link" href="https://drive.google.com/drive/folders/1XiZtm2QQO18NfSeVxccGcGPE0y3iChMP?usp=drive_link">link</a>.</div>
+      </div>
+    </div>
+    <div class="images-container">
+      <figure>
+        <img class="additional-image" src="LLO.jpg">
+        <figcaption class="image-caption">On top of one of LIGO Livingston's interferometer arms</figcaption>
+      </figure>
+      <figure>
+        <img class="additional-image" src="lsu_poster.jpg">
+        <figcaption class="image-caption">Presenting my summer work at LSU's Summer Undergraduate Research Forum </figcaption>
+      </figure>
+    </div>
+  </div>
+
 </body>
+
 </html>
+

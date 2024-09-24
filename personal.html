@@ -41,32 +41,50 @@
       padding: 10px; /* Adjust the padding for spacing around the text */
     }
 
-    .section-heading {
-  font-weight: bold;
-  text-align: left;
-  margin-left: 50px;
-  font-size: 18px;
-  margin-bottom: 10px;
-  }
+    .section-container {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-left: 10px;
+}
 
-  .section-body {
-    text-align: left;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  .section-body li {
-    margin-bottom: 10px; /* Add margin between list items */
-  }
-
-  .section-pictures {
-    max-width: 450px; /* Limit the maximum width of the image */
-    height: auto; /* Maintain the aspect ratio */
-    margin: 0 auto; /* Center the image horizontally */
-    display: block; /* Ensure the image is treated as a block element */
+    .section-body {
+      text-align: left;
+      margin-right: 20px;
+      flex: 1; /* Take up remaining space */
     }
+
+    .section-image-music {
+      max-width: 300px; /* Adjust the size as needed */
+      height: auto;
+    }
+
+    .image-caption {
+      text-align: center;
+      margin-top: 10px;
+      font-style: italic;
+      color: #555;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .section-heading {
+          font-weight: bold;
+          text-align: left;
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+
+      
 
   </style>
 </head>
+
+
 <body>
 
   <header>
@@ -93,45 +111,67 @@
     <hr>
 
 
-<div class="section-heading">
-  <b>Writing</b>
-</div>
-
-<div class="section-body"> 
-  Below are papers I have written on philosophy and literature:
-  <ul>
-    <li><b><a href="Materials/Heart_of_Darkness_Interpreted_through_Rousseau_s_Second_Discourse.pdf" target="_blank">Heart of Heart of Darkness as Interpreted through Rousseau's Second Discourse</a></b> - In this paper, I analyze Joseph Conrad's Heart of Darkness through the lens of Jean-Jacques Rousseau's Second Discourse.</li>
-    <li><b><a href="Materials/exhaltation_of_individual.pdf" target="_blank">Hank Rearden and the Exaltation of the Individual</a></b> - Though <u>I do not agree with the vast majority of Ayn Rand's philosophy</u>, I think she and her characters have some valuable insights about being a staunch individual, which is a quality that I can support in most cases. </li>
-  </ul>
-</div>
-<hr>
-<div class="section-heading">
-  <b>Music</b>
-</div>
-
-<div class="section-body"> 
-  Playing and listening to music has taken a large portion of my life and is an important part of it. 
-  <br>
-  <br>
-  <a class="link" href="https://musicboard.app/andrewfvalentini" target="_blank">Here</a> is a link to my Musicboard account. Though I am not very active on this, I have compiled a somewhat ranked <a class="link" href="https://musicboard.app/list/ec38d49f-9fe9-436e-9064-0b1bf0cb2603" target="_blank">list</a> of my favorite albums.
-</div>
-<hr>
-<div class="section-heading">
-    <b>Photography</b>
+<div class="section-container">
+  <div class="section-body">
+    <div class="section-heading">
+        <b>Writing</b>
+    </div>
+    <div class="section-body"> 
+      Below are papers I have written on philosophy and literature:
+      <ul>
+        <li><b><a href="Materials/Heart_of_Darkness_Interpreted_through_Rousseau_s_Second_Discourse.pdf" target="_blank">Heart of Heart of Darkness as Interpreted through Rousseau's Second Discourse</a></b> - In this paper, I analyze Joseph Conrad's Heart of Darkness through the lens of Jean-Jacques Rousseau's Second Discourse.</li>
+        <br>
+        <li><b><a href="Materials/exhaltation_of_individual.pdf" target="_blank">Hank Rearden and the Exaltation of the Individual</a></b> - Though <u>I do not agree with the vast majority of Ayn Rand's philosophy</u>, I think she and her characters have some valuable insights about being a staunch individual, which is a quality that I can support in most cases. </li>
+      </ul>
+    </div>
   </div>
-  
-  <div class="section-body"> 
-   Below are links to collections of photos I have taken:
+  </div>
+<hr>
 
-   <p><a href="Photos_Webpages/Colorado24.html">Colorado 8/24</a></p>
 
-   <p><a href="Photos_Webpages/PennState24.html">Near State College, Pennsylvania 5/24 - 8/24</a></p>
+<div class="section-container">
+  <div class="section-body">
+    <div class="section-heading">
+      <b>Music</b>
+    </div>
+    <div class="section-body">
+      Playing and listening to music has taken a large portion of my life and is an important part of it.
+      <br><br>
+      <a class="link" href="https://musicboard.app/andrewfvalentini" target="_blank">Here</a> is a link to my Musicboard account. Though I am not very active on this, I have compiled a somewhat ranked <a class="link" href="https://musicboard.app/list/ec38d49f-9fe9-436e-9064-0b1bf0cb2603" target="_blank">list</a> of my favorite albums.
+    </div>
+  </div>
 
-   <p><a href="Photos_Webpages/NorthernMinnesota.html">Northern Minnesota</a></p>
 
-   <p><a href="Photos_Webpages/animals.html">Animals</a></p>
+  <div class="section-image">
+    <figure>
+      <img class="section-image-music" src="Materials/Images/alivegirl.jpeg">
+      <figcaption class="image-caption">Before rehearsal with a shoegaze band I played guitar in for a little over two years</figcaption>
+    </figure>
+  </div>
+</div>
 
-   
+
+
+<hr>
+
+<div class="section-container">
+  <div class="section-body">
+    <div class="section-heading">
+        <b>Photography</b>
+      </div>
+      <div class="section-body"> 
+      Below are links to collections of photos I have taken:
+
+      <p><a href="Photos_Webpages/Colorado24.html">Colorado 8/24</a></p>
+
+      <p><a href="Photos_Webpages/PennState24.html">Near State College, Pennsylvania 5/24 - 8/24</a></p>
+
+      <p><a href="Photos_Webpages/NorthernMinnesota.html">Northern Minnesota</a></p>
+
+      <p><a href="Photos_Webpages/animals.html">Animals</a></p>
+
+      </div>
+    </div>
   </div>
 </body>
 </html>

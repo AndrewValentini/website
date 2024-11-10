@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website</title>
+  <link rel="stylesheet" href="styles2.css">
+  <style>
+    body {
+      text-align: center; /* Center align the content within the body */
+      font-family: 'Times New Roman', Times, serif; /* Choose a suitable font */
+      color: #301934; 
+    }
+
+    header {
+      margin-top: 25px; /* Adjust the top margin as needed */
+    }
+
+    h1 {
+      font-size: 24px; /* Adjust the font size as needed */
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: center; /* Center the boxes horizontally */
+      margin-top: 0px; /* Adjust the top margin as needed */
+    }
+
+    .box {
+      background-color: #E5E4E2; /* Set the background color to light grey */
+      box-sizing: border-box;
+      border-radius: 10px; /* Adjust the border-radius for rounded corners */
+      margin: 0 10px; /* Adjust the margin to bring the boxes closer together */
+      display: flex;
+      align-items: center; /* Center the text vertically within the box */
+      height: 30px; /* Adjust the height to make the boxes shorter */
+    }
+
+    .box a {
+      text-decoration: none; /* Remove underlining */
+      color: #301934; /* Set the font color to black */
+      padding: 10px; /* Adjust the padding for spacing around the text */
+    }
+
+    .section-heading {
+      font-weight: bold;
+      text-align: left;
+      margin-left: 50px;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .section-body {
+      text-align: left; /* Align text to the left */
+      margin-left: 50px;
+      margin-right: 100px;
+    }
+
+    .section-body p {
+      margin-bottom: 15px; /* Optional: Add space between paragraphs */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Andrew Valentini</h1>
+  </header>
+
+  <div class="box-container">
+    <div class="box">
+        <p><a href="../index.html">Home</a></p>
+    </div>
+    <div class="box">
+        <p><a href="../research_home.html">Research</a></p>
+    </div>
+    <div class="box">
+        <p><a href="../projects_home.html">Projects</a></p>
+    </div>
+    <div class="box">
+        <p><a href="../personal.html">Personal</a></p>
+    </div>
+    <div class="box">
+        <p><a href="../portfolio.html">Portfolio</a></p>
+    </div>
+  </div>
+  <hr>
+
+  <div style="text-align: center; font-weight: bold; font-size: 20px;">
+    <b>Reflection on my Experience at Penn State's REU Program</b>
+  </div>
+
+  <div class="section-body">
+
+
+    <p> In the summer of 2024, I was selected to participate in Penn State's physics REU. I developed a simulation of a quantum circuit from scratch with Dr. Sarah Shandera. When evolving the state of a whole system of qubits, you often apply unitary operations between groupings of them. From this, you can derive what are called dynamical maps, which equivalently evolve the state of single qubits in the circuit. From the whole system of qubits, you can determine how individual qubits evolve. When tracking the evolution of a single qubit, however, you must effectively average over the effects of its environmental qubits, so if there is a great degree of entanglement between your qubit of interest and its environment, this action of averaging over the state over the environment will inherently lose some information about the state of your system. Because some of your system's information can be lost in this process of deriving single qubit maps, these maps need not be unitary. This additionally gives rise to a mathematical property called non-complete positivity on the single qubit maps. If a map is not completely positive, it is not true that you will always have a valid quantum state after evolving an initially valid state over the single qubit map for all possible initial states. Because of this, the arrival of this mathematical property is thought to be indicative of the dynamics of higher-order entanglement (entanglement between more than two qubits), which we don't fully understand. <b>My job was to first write code that simulated an n-qubit circuit, derive the condition for our single qubit maps to be non-completely positive, and try to determine if the arrival of these non-completely positive maps had anything to do with possible diagnoses for higher-order entanglement.</b> </p>
+ 
+
+    <p> Not even having taken quantum before this experience, I had a steep learning curve to get over at the beginning of the summer if I had any hopes of writing my own quantum circuit simulation. The property of non-complete positivity is also a recent topic of research, and is even a property that a renowned (gravitational) physicist I spoke with over the summer didn't even believe was reasonable to consider, which made my situation worse. Wanting to have the opportunity to get to engage in original research, I read textbooks and papers as often as possible during the first three weeks of the summer to get to a place where I began to feel confident that I could begin coding up my own simulation. Reflecting on this period, I now fondly recall the prolonged experience of drowning in theory I had no background in for the first three weeks in a similar way I do to the later extremely physically challenging days of the same summer, when I had the opportunity to hike a good number of Colorado fourteeners in a somewhat unreasonable amount of days with high school friends. I look back on the intense periods of my life as being the times that have been most productive and developmental. </p>
+
+    <p> The process of coding an original quantum circuit simulation from scratch unsurprisingly took the largest chunk of time during the summer. As I began to feel that the work was close to complete, I didn't have the opportunity to see my mentor very often, so I began defining all kinds of thermodynamic and information-theoretic properties on the circuit so that I could track the arrival of NCP maps, which I had derived the condition for, with some characteristic pattern in some of these defined properties. My thought was that the arrival of NCP maps would be indicative of a property like mutual information spiking between pairs of qubits, thus indicating where the multipartite entanglement generating the NCP map was coming from. I had quickly developed a simulation that produced a massive amount of data, so I began doing what I know best and performed all kinds of data analysis techniques to search for the connection between NCP maps and anything happening to these properties. </p>
+
+    <p> During the final two weeks of the program, I showed my mentor the final state of the simulation I had developed and demonstrated all of the data it could then generate. It was soon determined that this was an unknown minor error in my work for a technical reason to do with the qubit states after one time step. Although I had learned how to implement sanity checks in my code to make sure that the simulation was running properly, there was still an unidentified error. While I began working on my poster and talk slides, I  </p>
+
+
+    
+  </div>
+
+</body>
+</html>

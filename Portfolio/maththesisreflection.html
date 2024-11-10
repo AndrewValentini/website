@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website</title>
+  <link rel="stylesheet" href="styles2.css">
+  <style>
+    body {
+      text-align: center; /* Center align the content within the body */
+      font-family: 'Times New Roman', Times, serif; /* Choose a suitable font */
+      color: #301934; 
+    }
+
+    header {
+      margin-top: 25px; /* Adjust the top margin as needed */
+    }
+
+    h1 {
+      font-size: 24px; /* Adjust the font size as needed */
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: center; /* Center the boxes horizontally */
+      margin-top: 0px; /* Adjust the top margin as needed */
+    }
+
+    .box {
+      background-color: #E5E4E2; /* Set the background color to light grey */
+      box-sizing: border-box;
+      border-radius: 10px; /* Adjust the border-radius for rounded corners */
+      margin: 0 10px; /* Adjust the margin to bring the boxes closer together */
+      display: flex;
+      align-items: center; /* Center the text vertically within the box */
+      height: 30px; /* Adjust the height to make the boxes shorter */
+    }
+
+    .box a {
+      text-decoration: none; /* Remove underlining */
+      color: #301934; /* Set the font color to black */
+      padding: 10px; /* Adjust the padding for spacing around the text */
+    }
+
+    .section-heading {
+      font-weight: bold;
+      text-align: left;
+      margin-left: 50px;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .section-body {
+      text-align: left; /* Align text to the left */
+      margin-left: 50px;
+      margin-right: 100px;
+    }
+
+    .section-body p {
+      margin-bottom: 15px; /* Optional: Add space between paragraphs */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Andrew Valentini</h1>
+  </header>
+
+  <div class="box-container">
+    <div class="box">
+        <p><a href="../index.html">Home</a></p>
+    </div>
+    <div class="box">
+        <p><a href="../research_home.html">Research</a></p>
+    </div>
+    <div class="box">
+        <p><a href="../projects_home.html">Projects</a></p>
+    </div>
+    <div class="box">
+        <p><a href="../personal.html">Personal</a></p>
+    </div>
+    <div class="box">
+        <p><a href="../portfolio.html">Portfolio</a></p>
+    </div>
+  </div>
+  <hr>
+
+  <div style="text-align: center; font-weight: bold; font-size: 20px;">
+    <b>Reflection on my Senior Thesis in Math</b>
+  </div>
+
+  <div class="section-body">
+    <p>When I began thinking about what topic I would like to work on for my senior thesis in math over the summer before my senior year, I knew that I would want to work on some problem in mathematical physics. I had begun skimming papers published in the American Institute of Physics's Journal of Mathematical Physics on topics that interested me, gravity and cosmology, a couple of weeks before the fall semester started. As I read these papers, I began to realize that the amount of pure topology I would need to know in order to begin working on problems similar to those I was reading about was not reasonable for an undergraduate thesis without an advisor to hand me a question in the field. Looking back, I am confident that I would have been able to engage with this very pure work if I had been handed a canned research project by a professor of mathematical physics, but since I was planning to work on the thesis alone, I came to accept that my initial ideas would not be reasonable. In this way, I had already learned an important lesson in carrying out research independently before starting work on identifying the space of feasible projects given my knowledge and resources.</p>
+
+    <p>I was beginning to talk to math faculty about directions I could take my thesis given what I knew and what I was interested in near the end of the summer, wanting to make sure that my math thesis wouldn't turn out to be a physics thesis dressed up in some additional math given that I wasn't going the route of mathematical physics. Around this time, I started playing with the idea of making some sort of simulation in a gravitational context, which led me to start thinking about numerical relativity, since I knew that this was the language that allows gravitational theorists to simulate gravitational systems, such as the merging of black holes. I then learned about the mathematical technique used in numerical relativity, called the 3+1 decomposition, which allows you to separate a four-dimensional spacetime into spatial hypersurfaces that evolve over time. When this is done for general relativity, one arrives at what is known as the ADM formulation of relativity, which has been immensely important to the field. Since I had previously learned general relativity, I figured that working on this would be in line with my knowledge and wouldn't require an unnecessary amount of introduction to the subject before I was able to start engaging in some sort of research. I learned that when this method of decomposing a four-dimensional theory into spatial slices that evolve in time is applied to general relativity, the mathematical framework is general; it is not specific to relativity. I knew that modified theories of gravity result in wildly different field equations than general relativity so I began to think about applying this generic method for decomposing a four-dimensional theory to a modified theory of gravity. I assumed (correctly) that because there are so many theories of modified gravity and because writing them in an ADM formulation might not be something that professional physicists or mathematicians spend their time doing (which also turned out to be somewhat correct), I would be able to find a theory of modified gravity that had not yet been written in the ADM formalism.</p>
+ 
+    <p> I spent the first couple of weeks of my senior fall semester reviewing the literature on which theories of modified gravity have been written in the ADM formalism and again strengthened the valuable skill of reading and quickly identifying the relevant elements of highly technical work in theoretical physics. To my surprise, I eventually found that a relatively popular theory of modified gravity developed by John W. Moffat, called Scalar-Tensor-Vector Gravity (STVG), or commonly referred to as MOdified Gravity (MOG) in a playful reference to Mordehai Milgrom's Modified Newtonian Dynamics (MOND) had not yet been written in the ADM formalism. I then decided to apply the 3+1 formalism to Moffat's theory of modified gravity for my thesis. While searching the literature for a theory of modified gravity to work with, I also had begun learning how the process of 3+1 decomposition works, relying on my previous knowledge of general relativity. I again developed another valuable skill in this early phase of the thesis; I again had the opportunity to independently learn a difficult topic in theoretical physics, using a couple of textbooks, some notes, and recorded lectures on the subject. During this phase, I became very obsessive with the work and was able to move through a large amount of material while taking classes and working on my application for the NSF's Graduate Research Fellowship Program. This phase lasted for a couple of weeks, and I began to officially write the introductory sections to my thesis as I slowed down. In preparation for my scheduled talk at Pi Mu Epsilon's annual regional meeting in early November, I have recently moved into the process of officially writing STVG in the ADM formalism. Working on the research content of my thesis has been an influential process, primarily because of the independence of the work. In decomposing each of the field equations of SVTG, I have no way of checking my results with an expert in the field, so I have relied on my own ability to discern whether or not a step taken in a derivation was correct, and have had to figure out where to look for steps I am unclear in; help which has primarily come from the textbooks on the subject I have been using. </p>
+
+    <p> Working on a math thesis on a rigorous subject without the guidance of an advisor in the field has challenged me in a constructive way, especially being in a field that I would like to stay close to in grad school. I don't intend in any way to continue this work in grad school, but having more advanced knowledge of differential geometry and mathematical relativity will support my future goal of working on some aspect of theoretical relativity or cosmology. Given that most relativity theorists work closely with simulation, having a working knowledge of numerical relativity and its mathematical basis, the 3+1 formalism, will also support my future goals in this way. I see this work as a culmination of a good amount of physics, and especially math, I have learned while at Carthage. Working on this thesis has required a knowledge of the 3+1 formalism, which requires a good knowledge of general relativity, which itself requires a strong background in multivariable calculus and the more advanced methods introduced later in the Electricity and Magnetism class at Carthage.    </p>
+    
+  </div>
+
+</body>
+</html>

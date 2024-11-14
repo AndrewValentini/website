@@ -118,6 +118,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    gap: 100px;
     }
 
     .image-box {
@@ -141,6 +142,7 @@
     margin-top: 10px;
     font-size: 14px;
     text-align: left;
+    max-width: 500px;
     }
 
 
@@ -149,6 +151,25 @@
       text-align: center;
       font-size: 18px;
       margin-bottom: 10px;
+    }
+    .section-heading {
+      font-weight: bold;
+      text-align: left;
+      margin-left: 50px;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .section-body {
+      text-align: left; /* Align text to the left */
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+
+    .section-body p {
+      margin-bottom: 15px; /* Optional: Add space between paragraphs */
+      line-height: 1.8;
+
     }
 
 
@@ -185,12 +206,7 @@
     <hr>
 
 
-    <div style="text-align: center; font-weight: bold; font-size: 20px;">
-        <b>Portfolio Elements and Reflections</b>
-    </div>
-
-Below are links to descriptions and expositions of research and projects that have shaped me over the last four years
-
+   
 <div class="image-container">
   <div class="image-box">
     <h3 class="image-heading"><u>Reflection on Independently Learning GR</u></h3>
@@ -206,84 +222,58 @@ Below are links to descriptions and expositions of research and projects that ha
       <br>
       <br>
       <div class="research-summary">
-          <p>This is a short description of the research experience related to Image 1. The description gives a brief overview of the key points and findings. This is a short description of the research experience related to Image 2. The description provides insight into the objectives and results. This is a short description of the research experience related to Image 2. The description provides insight into the objectives and results.</p>
+          <p>Just as the fall semester of my junior year was beginning, I began independently learning general relativity. This is a reflection on my experience of this process.</p>
       </div>
-      <a href="Portfolio/GRreflection.html" class="research-link">Read this reflection</a>
+      <b><a href="Portfolio/GRreflection.html" class="research-link">Read this reflection</a></b>
   </div>
   
   <div class="image-box">
-     <h3 class="image-heading"><u>Reflection on PSU REU</u></h3>
+     <h3 class="image-heading"><u>Reflection on Penn State REU</u></h3>
       <img src="Materials/Images/PSUsymposium_presentation.jpg" class="section-image-LLO">
       <div class="research-summary">
-          <p>This is a short description of the research experience related to Image 2. The description provides insight into the objectives and results. This is a short description of the research experience related to Image 2. The description provides insight into the objectives and results. This is a short description of the research experience related to Image 2. The description provides insight into the objectives and results.</p>
+          <p>During the summer between my junior and senior year, I participated in Penn State's physics REU, mentored by Dr. Sarah Shandera. This is a reflection of my experience and a brief description of my work.</p>
       </div>
-      <a href="Portfolio/PSUreflection.html" class="research-link">Read this reflection</a>
+     <b><a href="Portfolio/PSUreflection.html" class="research-link">Read this reflection</a></b>
   </div>
+
+</div>
+
+
+
+<div class="image-container">
+
   <div class="image-box">
-      <h3 class="image-heading"><u>Reflection on Math Senior Thesis</u></h3>
-      <br>
+    <h3 class="image-heading"><u>Reflection on Math Senior Thesis</u></h3>
+    <br>
+    <br>
+    <img src="Materials/Images/31decomp.png" alt="Image 3" class="section-image-LLO">
+    <br>
+    <br>
+    <div class="research-summary">
+        <p>For my senior thesis in mathematics, I wrote a modified theory of gravity, called Scalar-Tensor-Vector Gravity in the ADM Formalism. I worked independently and </p>
+    </div>
+    <b><a href="Portfolio/maththesisreflection.html" class="research-link">Read this reflection</a></b>
+</div>
 
-      <img src="Materials/Images/31decomp.png" alt="Image 3" class="section-image-LLO">
-      
-      <div class="research-summary">
-          <p>This is a short description of the research experience related to Image 3. It highlights the contributions made through the project. This is a short description of the research experience related to Image 2. The description provides insight into the objectives and results. This is a short description of the research experience related to Image 2. The description provides insight into the objectives and results.</p>
-      </div>
-      <a href="Portfolio/maththesisreflection.html" class="research-link">Read this reflection</a>
+
+<div class="image-box">
+  <h3 class="image-heading"><u>Reflection on My Gravitational Waves Research</u></h3>
+  <br>
+
+  <img src="Materials/Images/Portfolio_Figures/onLIGO.jpg" alt="Image 3" class="section-image-LLO">
+  
+  <div class="research-summary">
+      <p>In each year during my undergraduate, I have engaged in gravitational wave research. In this, I reflect on this work.</p>
   </div>
+  <b><a href="Portfolio/gwavereflection.html" class="research-link">Read this reflection</a></b>
+
+  <br>
+  <br>
+  <br>
+  <br>
 </div>
 
-<hr>
-
-<!--
-<div style="text-align: center; font-weight: bold; font-size: 20px;">
-    <b>Skills Inventory</b>
 </div>
-
-
-<div class="accordion">Physics</div>
-<div class="panel">
-    <p>Classes I've take and the physics specailties I have</p>
-</div>
-
-<div class="accordion">Math</div>
-<div class="panel">
-    <p>Classes I've take and the math specailties I have</p>
-</div>
-
-<div class="accordion">Technical Skills</div>
-<div class="panel">
-    Technical skills I have, including languages I know, Python packages I'm good at, Mathematica, etc. 
-</div>
-
-<div class="accordion">Soft Skills</div>
-<div class="panel">
-    Detail the different chances you've had to speak; inside and outside of classes (class projects, conferences, and outreach) 
-</div>
-
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    for (var i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-    }
-</script>
-
-<hr>
--->
-
-
-<div style="text-align: center; font-weight: bold; font-size: 20px;">
-    <b>Physics in a Summit</b>
-</div>
-
-This is where final reflection will go 
 
 </body>
 

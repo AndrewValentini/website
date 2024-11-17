@@ -50,8 +50,8 @@
 
     .section-body {
       text-align: left; /* Align text to the left */
-      margin-left: 200px;
-      margin-right: 200px;
+      margin-left: 150px;
+      margin-right: 150px;
     }
 
     .section-body p {
@@ -85,19 +85,48 @@
   </div>
   <hr>
 
-  <div style="text-align: center; font-weight: bold; font-size: 20px;">
+  <div style="text-align: center; font-weight: bold; font-size: 30px;">
     <b>Reflection on my Senior Thesis in Math</b>
   </div>
 
   <div class="section-body">
-    <p>When I began thinking about what topic I would like to work on for my senior thesis in math over the summer before my senior year, I knew that I would want to work on some problem in mathematical physics. I had begun skimming papers published in the American Institute of Physics's Journal of Mathematical Physics on topics that interested me, gravity and cosmology, a couple of weeks before the fall semester started. As I read these papers, I began to realize that the amount of pure topology I would need to know in order to begin working on problems similar to those I was reading about was not reasonable for an undergraduate thesis without an advisor to hand me a question in the field. Looking back, I am confident that I would have been able to engage with this very pure work if I had been handed a canned research project by a professor of mathematical physics, but since I was planning to work on the thesis alone, I came to accept that my initial ideas would not be reasonable. In this way, I had already learned an important lesson in carrying out research independently before starting work on identifying the space of feasible projects given my knowledge and resources.</p>
+    <br>
+    <br>
+    <div style="text-align: left; font-weight: bold; font-size: 25px;">
+      <b>Background</b>
+    </div>  
 
-    <p>I was beginning to talk to math faculty about directions I could take my thesis given what I knew and what I was interested in near the end of the summer, wanting to make sure that my math thesis wouldn't turn out to be a physics thesis dressed up in some additional math given that I wasn't going the route of mathematical physics. Around this time, I started playing with the idea of making some sort of simulation in a gravitational context, which led me to start thinking about numerical relativity, since I knew that this was the language that allows gravitational theorists to simulate gravitational systems, such as the merging of black holes. I then learned about the mathematical technique used in numerical relativity, called the 3+1 decomposition, which allows you to separate a four-dimensional spacetime into spatial hypersurfaces that evolve over time. When this is done for general relativity, one arrives at what is known as the ADM formulation of relativity, which has been immensely important to the field. Since I had previously learned general relativity, I figured that working on this would be in line with my knowledge and wouldn't require an unnecessary amount of introduction to the subject before I was able to start engaging in some sort of research. I learned that when this method of decomposing a four-dimensional theory into spatial slices that evolve in time is applied to general relativity, the mathematical framework is general; it is not specific to relativity. I knew that modified theories of gravity result in wildly different field equations than general relativity so I began to think about applying this generic method for decomposing a four-dimensional theory to a modified theory of gravity. I assumed (correctly) that because there are so many theories of modified gravity and because writing them in an ADM formulation might not be something that professional physicists or mathematicians spend their time doing (which also turned out to be somewhat correct), I would be able to find a theory of modified gravity that had not yet been written in the ADM formalism.</p>
- 
-    <p> I spent the first couple of weeks of my senior fall semester reviewing the literature on which theories of modified gravity have been written in the ADM formalism and again strengthened the valuable skill of reading and quickly identifying the relevant elements of highly technical work in theoretical physics. To my surprise, I eventually found that a relatively popular theory of modified gravity developed by John W. Moffat, called Scalar-Tensor-Vector Gravity (STVG), or commonly referred to as MOdified Gravity (MOG) in a playful reference to Mordehai Milgrom's Modified Newtonian Dynamics (MOND) had not yet been written in the ADM formalism. I then decided to apply the 3+1 formalism to Moffat's theory of modified gravity for my thesis. While searching the literature for a theory of modified gravity to work with, I also had begun learning how the process of 3+1 decomposition works, relying on my previous knowledge of general relativity. I again developed another valuable skill in this early phase of the thesis; I again had the opportunity to independently learn a difficult topic in theoretical physics, using a couple of textbooks, some notes, and recorded lectures on the subject. During this phase, I became very obsessive with the work and was able to move through a large amount of material while taking classes and working on my application for the NSF's Graduate Research Fellowship Program. This phase lasted for a couple of weeks, and I began to officially write the introductory sections to my thesis as I slowed down. In preparation for my scheduled talk at Pi Mu Epsilon's annual regional meeting in early November, I have recently moved into the process of officially writing STVG in the ADM formalism. Working on the research content of my thesis has been an influential process, primarily because of the independence of the work. In decomposing each of the field equations of SVTG, I have no way of checking my results with an expert in the field, so I have relied on my own ability to discern whether or not a step taken in a derivation was correct, and have had to figure out where to look for steps I am unclear in; help which has primarily come from the textbooks on the subject I have been using. </p>
+    <p>General relativity has been one of the most sucessful theories in the history of physics, having passed countless observational tests. Desipte its success, however, there still exist fundamental probelms with the theory in the form of singularities that have been proven to exist at the center of black holes and at the origin of our universe. General relativity additionally faces problems in the discrpeancy between astronomical observations and predictions for these events generated by the theory. These have ultimately led to the hypothesized existence of dark matter and dark energy. Despite the mounting evidence for dark matter's existence, some physicsts believe that hypothesizing the existence of dark matter from the current observational challenges is an overstepping of theoretical expectations, and instead propse that these challenges could be solved by adding modifications to general relativity.  </p>
 
-    <p> Working on a math thesis on a rigorous subject without the guidance of an advisor in the field has challenged me in a constructive way, especially being in a field that I would like to stay close to in grad school. I don't intend in any way to continue this work in grad school, but having more advanced knowledge of differential geometry and mathematical relativity will support my future goal of working on some aspect of theoretical relativity or cosmology. Given that most relativity theorists work closely with simulation, having a working knowledge of numerical relativity and its mathematical basis, the 3+1 formalism, will also support my future goals in this way. I see this work as a culmination of a good amount of physics, and especially math, I have learned while at Carthage. Working on this thesis has required a knowledge of the 3+1 formalism, which requires a good knowledge of general relativity, which itself requires a strong background in multivariable calculus and the more advanced methods introduced later in the Electricity and Magnetism class at Carthage.    </p>
-    
+    <p> For my senior thesis in mathematics, I knew I wanted to work on a problem in gravitational theory, but without given a canned project in the field, I spent some of the last few weeks before the fall semester began figuring out what work I found interesting and that I would be able to reasonably accomplish within around a semester given my working knowledge of general relativity. Having some interest in computational physics, I decided to read up on the math used to create simulations of gravitational systems, called numerical relativity. I learned that in order to simulate Einstein's equations on a computer, one needs to write his field equations in a formalism condusive to describing a system's spatial and temporal evolution separately. In this way, one needs a method for separating the spatial and temporal components of the theory's varaibles, which is achieved by appplying what is called the 3+1 decomposition to the theory. This 3+1 decomposition is a generic method and so I decided on finding a modified theory that had not yet had this method applied to it. When this decompoisiton is fully applied to a theory of gravity, it is then written in an ADM formulation, which is named after the authors who first worked this out for general relativity. 
+    </p>
+
+    <p>I spent the first couple of weeks into the fall semester looking for a modified theory of graivty that I could reasonably work with, and evetnaully landed on John Moffat's Scalar-Tensor-Vector Gravity (STVG).  </p>
+
+    <div style="text-align: left; font-weight: bold; font-size: 25px;">
+      <b>Decomposing STVG
+      </b>
+    </div>  
+
+
+    <p> When one applies the 3+1 decomposition to a theory of gravity, three separate decompoisitions are required to be made for each of the theory's variables after some notion of the direction in which time flows is established. One needs to project all of the theory's variables (1) all along the spatial components, (2) all along the direction of the normal vector which defines the direction of time flow, and (3) one needs to compute a mixed project: one that projects your theory's variables along the spatial and normal directions. </p>
+      
+    <div style="display: flex; flex-direction: column; align-items: center; height: 100vh; justify-content: center;">
+      <img src="../Materials/Images/31decomp.png" alt="Example Image" style="max-width: 500px; margin-bottom: 10px;">
+
+  
+      
+
+    <p>SVTG adds three scalar terms, one of which allows the gravitational constant G to vary over space and time, and one vector field, which adds a repulsive gravitational force to the theory, in addition to modifiying the original tensor field equations handed down to us from Einstein. Because of this, to fully decompose SVTG, and therefore write it in the ADM formulation, there are five field equations that need to be decomposed and there are three decompositions that are needed to be made for each, meaning my thesis work consists of fifteen total computations that need to be carried out. </p>
+
+
+
+
+    <div style="text-align: left; font-weight: bold; font-size: 25px;">
+      <b>Conclusion and Reflection</b></div> 
+
+
+
   </div>
 
 </body>

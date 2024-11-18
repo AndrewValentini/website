@@ -116,6 +116,8 @@
           Your browser does not support the video element.
       </video>
     </div>
+    <p style="text-align: center; font-style: italic; max-width: 600px; width: 100%; margin: 0 auto;">Animating the evolution of a circuit and deriving the dynamical maps between the initial and final state of each qubit at each time in the simulation. When a dynamical map is NCP, it is marked red. Note how rare such an occurrence is for our system of interest.</p>
+    
 
     <br>
     <br>
@@ -128,32 +130,35 @@
     <p> As I began to feel that the work was close to complete, I didn't have the opportunity to see my mentor very often, so I began defining all kinds of thermodynamic and information-theoretic properties on the circuit so that I could track the arrival of NCP maps, which I had derived the condition for, with some characteristic pattern in some of these defined properties. My thought was that the arrival of NCP maps would be indicative of a property like mutual information spiking between pairs of qubits, thus indicating where the multipartite entanglement generating the NCP map was coming from. I had quickly developed a simulation that produced a massive amount of data, so I began doing what I know best and performed all kinds of data analysis techniques to search for the connection between NCP maps and anything happening to these properties.
     </p>
 
+
+
+
+    <div style="display: flex; flex-direction: column; align-items: center; height: 70vh; justify-content: center;">
+      <img src="../Materials/Images/Portfolio_Figures/entropy.png" alt="Example Image" style="max-width: 640px; margin-bottom: 10px;">
+      <p style="text-align: center; font-style: italic; word-wrap: break-word; max-width: 550px;">Showing the entropy of individual qubits fluctuating over time and showing that the cumulative entropy of the whole circuit grows linearly over time, matching a proven result for quantum circuits.</p>
+    </div>
+
     <div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
       <video controls width="400" height="400">
           <source src="../Materials/Images/connectivity_animation_correct.mp4" type="video/mp4">
           Your browser does not support the video element.
       </video>
     </div>
+    <p style="text-align: center; font-style: italic; word-wrap: break-word; max-width: 550px; width: 100%; margin: 10px auto 0;">Animation of the mutual information shared between qubit pairs changing as circuit evolves. Nodes represent individual qubits, edges represent whether or not they share mutual information (whether or not they are entangled), and the distance between nodes represents the mutual information's magnitude.</p>
+    
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div style="display: flex; flex-direction: column; align-items: center; height: 100vh; justify-content: center;">
-      <img src="../Materials/Images/Portfolio_Figures/entropy.png" alt="Example Image" style="max-width: 640px; margin-bottom: 10px;">
 
 
     <p>I ended the experience by creating a method by which I could compute a correlation between the arrival of NCP maps and a spike in the mutual information between specific qubits pairs. My thought was that when an NCP map would arrive, if it was a signal for higher-order entanglement, there may be a spike in mutual information between the qubits that this higher order entanglement was present between. In carrying this out, I discovered that such a correlation did not exist, and similarly did not exist for another measure of mutlipartite entanglement called concurrence.  </p>
 
-    <div style="display: flex; flex-direction: column; align-items: center; height: 100vh; justify-content: center;">
+
+
+
+
+    <div style="display: flex; flex-direction: column; align-items: center; height: 50vh; justify-content: center;">
       <img src="../Materials/Images/Portfolio_Figures/MIspikes.png" alt="Example Image" style="max-width: 640px; margin-bottom: 10px;">
-
-
+      <p style="text-align: center; font-style: italic; word-wrap: break-word; max-width: 550px">Showing the lack of correlation between mutual information (measure of bipartite entanglement) spikes and the arrival of NCP maps. Generated with incorrect derivation of NCP maps which was generating NCP maps at a much higher frequency and still features a poor correlation.</p>
+    </div>
     <br>
     <br>
     <div style="text-align: left; font-weight: bold; font-size: 25px;">
